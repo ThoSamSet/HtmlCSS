@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://previews.123rf.com/images/karenr/karenr1506/karenr150600007/40831894-blue-and-white-striped-gingham-tile-pattern-repeat-background-that-is-seamless-and-repeats.jpg);
+    background-size: contain;
+    
+}
+
+.title {
+    color: rgb(158, 0, 0);
+}

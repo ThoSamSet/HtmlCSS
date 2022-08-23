@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Sét cấc thành phần nằm trung tâm của trang */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica Neue;
+    /* justify-content: center;
+    align-items: center; */
+    /* height: 200px; */
+    /* border: 3px solid green; */
+}
+
+body > div {
+    margin: auto;
+}
+
+/* Block - Chung cho tất cả các Btn */
+.btn {
+    /* đặt các Btn nằm ngang */
+    display: inline-block;
+    /* xoá gạch dưới của link */
+    text-decoration: none;
+    /* làm nền của Btn trong suốt */
+    background-color: transparent;
+    /* Xoá viền Btn */
+    border: none;
+    /* Xoá outline của Btn */
+    outline: none;
+    /* Màu chữ */
+    color: #fff;
+    /* Thêm vào khoảng không cho Btn - trên dưới - trái phải */
+    padding: 12px 48px;
+    /* Bo cong border */
+    border-radius: 50px;
+    /* Thay đổi con trỏ chuột khi di chuột lên Btn */
+    cursor: pointer;
+    /* Chiều ngang tối thiểu của Btn */
+    min-width: 120px;
+    /* tạo KeyFrame thay đổi cho một thuộc tính nào đó (opacity) .. giây */
+    transition: opacity .2s ease;
+}
+
+/* Làm mờ Btn khi di chuột lên */
+.btn:hover {
+    /* Giảm độ đục mờ xuống 80% */
+    opacity: 0.8;
+}
+
+/* Css cho 2 khối đúng cạnh nhau */
+.btn + .btn {
+    /* Đẩy sang trái ..px */
+    margin-left: 16px;
+}
+
+/*  Size lớn */
+.btn--size-l {
+    padding: 16px 56px;
+}
+
+/* Size bé */
+.btn--size-s {
+    padding: 8px 32px;
+}
+
+/* Btn thành công  */
+.btn--success {
+    background-color: #71be34;
+}
+
+/* Btn warning  */
+.btn--warn {
+    background-color: #ffb702;
+}
+
+/* Btn Danger */
+.btn--danger {
+    background-color: #ff623d;
+}
+
+/* Trạng thái không bấm được của Btn */
+.btn--disabled {
+    opacity: .5 !important;
+    cursor: default;
+}
